@@ -26,6 +26,16 @@ public class MyApp extends Application {
         super.onCreate();
 
         initCloudChannel(this);
+
+
+
+        // 开启log，要放到前面才能看到初始化过程的log
+        if (BuildConfig.DEBUG) {
+            //Router.openLog();
+        }
+        // 初始化
+        //Router.initialize(this);
+
     }
 
     /**
